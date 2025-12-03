@@ -36,28 +36,26 @@ body:
     id: participant-e-s
     attributes:
       label: Qui participe?
-      multiple: true
       options:
-        - Étudiant·e·s
-        - Membres des organismes
-        - Conseil Administratif des organismes
-        - Délégué·e·s du CÉ
-        - Exécutant·e·s
-        - Employé·e·s de l'AGECEM
-        - Autre
+        - label: Étudiant·e·s
+        - label: Membres des organismes
+        - label: Conseil Administratif des organismes
+        - label: Délégué·e·s du CÉ
+        - label: Exécutant·e·s
+        - label: Employé·e·s de l'AGECEM
+        - label: Autre
 
   - type: checkboxes
     id: departement
     attributes:
       label: Département scolaire
-      multiple: true
       options:
-        - Nom complet
-        - Code étudiant
-        - Rôle
-        - Périodes de présence
-        - Restrictions alimentaires
-        - Conditions médicales
+        - label: Nom complet
+        - label: Code étudiant
+        - label: Rôle
+        - label: Périodes de présence
+        - label: Restrictions alimentaires
+        - label: Conditions médicales
 
   - type: textarea
     id: activites
@@ -87,8 +85,7 @@ body:
     id: taches
     attributes:
       label: Tâches à réaliser
-      multiple: true
       options:
-        - Demande de réservation du lieu
-        - Produire et envoyer le formulaire d'inscription
+        - label: Demande de réservation du lieu
+        - label: Produire et envoyer le formulaire d'inscription
         - 
