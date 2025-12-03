@@ -1,6 +1,7 @@
 name: Litige
 description: Pour réception des situations de litige.
 projects: ["Tâches"]
+title: "[DATE]: "
 type: litige
 body:
   - type: markdown
