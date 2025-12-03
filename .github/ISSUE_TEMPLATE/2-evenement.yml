@@ -76,7 +76,7 @@ body:
     id: materiel-louer
     attributes:
       label: Matériel à louer
-      description: Le matériel suivant peut être loué par Dédé: Projecteur et écran de projection, système de son avec micros, système d'éclairage, télévisions, etc
+      description: Le matériel suivant peut être loué par Dédé - Projecteur et écran de projection, système de son avec micros, système d'éclairage, télévisions, etc
 
   - type: textarea
     id: materiel-achat
