@@ -46,7 +46,7 @@ body:
         - Employé·e·s de l'AGECEM
         - Autre
 
-  - type: checkbox
+  - type: checkboxes
     id: departement
     attributes:
       label: Département scolaire
@@ -83,7 +83,7 @@ body:
     attributes:
       label: Matériel à acheter
 
-  - type: checkbox
+  - type: checkboxes
     id: taches
     attributes:
       label: Tâches à réaliser
