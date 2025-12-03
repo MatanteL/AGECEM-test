@@ -2,7 +2,6 @@ name: Litige
 description: Pour réception des situations de litige.
 title: "[DATE]: "
 projects: ["Tâches"]
-type: litige
 body:
  - type: input
     id: numero
