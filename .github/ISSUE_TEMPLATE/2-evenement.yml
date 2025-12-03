@@ -63,7 +63,7 @@ body:
     id: activites
     attributes:
       label: Activités prévues
-      placeholder: Activité\: Description, Lieu, Heure et durée prévue
+      placeholder: Activité - Description, Lieu, Heure et durée prévue
 
   - type: textarea
     id: materiel-prep
