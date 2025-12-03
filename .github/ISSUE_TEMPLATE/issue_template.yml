@@ -16,7 +16,7 @@ body:
     id: date
     attributes:
       label: Date de réception du litige
-      placeholder: ex. Dorothée Tudiante (5318008)
+      placeholder: ex. AAAA-MM-JJ
     validations:
       required: true
       
@@ -49,7 +49,47 @@ body:
         - Employé·e de l'AGECEM
         - Organisme étudiant
         - Instance de l'AGECEM
-      
+
+   - type: dropdown
+    id: departement
+    attributes:
+      label: Département scolaire
+      multiple: false
+      options:
+        - Administration et techniques administratives
+        - Anthropologie
+        - Arts plastiques
+        - Biologie
+        - Chimie
+        - Cinéma et communication
+        - Cours multidisciplinaires
+        - Denturologie
+        - Économie
+        - Éducation à l'enfance
+        - Éducation physique
+        - Électronique
+        - Éducation spécialisée
+        - Géographie
+        - Géologie et physique
+        - Histoire
+        - Histoire de l'art
+        - Hygiène dentaire
+        - Informatique
+        - Langues
+        - Littérature et français
+        - Mathématiques
+        - Multimédia
+        - Nutrition
+        - Radiodiagnostic
+        - Optique et lunetterie
+        - Philosophie
+        - Politique
+        - Prothèses dentaires
+        - Psychologie
+        - Sciences graphiques
+        - Sociologie
+        - Soins infirmiers
+
   - type: textarea
     id: evenements
     attributes:
