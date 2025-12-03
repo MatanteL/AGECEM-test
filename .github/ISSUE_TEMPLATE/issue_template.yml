@@ -4,11 +4,6 @@ projects: ["Tâches"]
 title: "[DATE]: "
 type: litige
 body:
-  - type: markdown
-    attributes:
-      value: | 
-      ## RÉCEPTION DU LITIGE
-
   - type: input
     id: numero
     attributes:
@@ -55,10 +50,6 @@ body:
         - Employé·e de l'AGECEM
         - Organisme étudiant
         - Instance de l'AGECEM
-
-  - type: markdown
-    attributes:
-      value: ## INFORMATIONS SUR LES ÉVÉNEMENTS
       
   - type: textarea
     id: evenements
