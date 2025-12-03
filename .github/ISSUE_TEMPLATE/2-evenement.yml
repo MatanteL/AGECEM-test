@@ -4,116 +4,91 @@ title: "[DATE]: [NOM DE L'ÉVÉNEMENT]"
 projects: ["Tâches"]
 body:
   - type: input
-    id: numero
+    id: nom
     attributes:
-      label: Numéro de dossier
-      description: Date de réception en format AAAA-MM-JJ, initiales de la personne ressource, rôle de la personne, nom de famille et initiale du prénom de la personne mise en cause, numéro
-      placeholder: AAAA-MM-JJ_PR_CEMens_seigneJ_01
+      label: Nom de l'événement
     validations:
       required: true
 
   - type: input
     id: date
     attributes:
-      label: Date de réception du litige
-      placeholder: ex. AAAA-MM-JJ
-    validations:
-      required: true
-      
-  - type: input
-    id: plaignant-e
-    attributes:
-      label: Nom et code étudiant de la personne plaignante
-      placeholder: ex. Dorothée Tudiante (5318008)
+      label: Date de tenue de l'événement
+      placeholder: ex. AAAA-MM-JJ HH:MM - AAAA-MM-JJ HH:MM
     validations:
       required: true
 
   - type: input
-    id: mis-en-cause
+    id: lieu
     attributes:
-      label: Nom de la personne mise en cause
-      placeholder: ex. Jean Seigne
+      label: Lieu de tenue de l'événement
     validations:
       required: true
 
-  - type: dropdown
-    id: poste
+  - type: input
+    id: personnes-ressource
     attributes:
-      label: Poste de la personne mise en cause
-      multiple: false
+      label: Personnes Ressource
+    validations:
+      required: true
+  
+  - type: checkboxes
+    id: participant-e-s
+    attributes:
+      label: Qui participe?
+      multiple: true
       options:
-        - Enseignant·e
-        - Employé·e du CÉGEP
-        - Service du CÉGEP
-        - Étudiant·e
-        - Employé·e de l'AGECEM
-        - Organisme étudiant
-        - Instance de l'AGECEM
+        - Étudiant·e·s
+        - Membres des organismes
+        - Conseil Administratif des organismes
+        - Délégué·e·s du CÉ
+        - Exécutant·e·s
+        - Employé·e·s de l'AGECEM
+        - Autre
 
-  - type: dropdown
+  - type: checkbox
     id: departement
     attributes:
       label: Département scolaire
-      multiple: false
+      multiple: true
       options:
-        - Administration et techniques administratives
-        - Anthropologie
-        - Arts plastiques
-        - Biologie
-        - Chimie
-        - Cinéma et communication
-        - Cours multidisciplinaires
-        - Denturologie
-        - Économie
-        - Éducation à l'enfance
-        - Éducation physique
-        - Électronique
-        - Éducation spécialisée
-        - Géographie
-        - Géologie et physique
-        - Histoire
-        - Histoire de l'art
-        - Hygiène dentaire
-        - Informatique
-        - Langues
-        - Littérature et français
-        - Mathématiques
-        - Multimédia
-        - Nutrition
-        - Radiodiagnostic
-        - Optique et lunetterie
-        - Philosophie
-        - Politique
-        - Prothèses dentaires
-        - Psychologie
-        - Sciences graphiques
-        - Sociologie
-        - Soins infirmiers
+        - Nom complet
+        - Code étudiant
+        - Rôle
+        - Périodes de présence
+        - Restrictions alimentaires
+        - Conditions médicales
 
   - type: textarea
-    id: evenements
+    id: activites
     attributes:
-      label: Description des événements
+      label: Activités prévues
+      placeholder: Activité: Description, Lieu, Heure et durée prévue
+
+  - type: textarea
+    id: materiel-prep
+    attributes:
+      label: Matériel à préparer
     validations:
       required: true
 
   - type: textarea
-    id: consequences
+    id: materiel-louer
     attributes:
-      label: Conséquences ou impacts sur la personne plaignante
-    validations:
-      required: true
+      label: Matériel à louer
+      description: Le matériel suivant peut être loué par Dédé: Projecteur et écran de projection, système de son avec micros, système d'éclairage, télévisions, etc
 
   - type: textarea
-    id: arrangements
+    id: materiel-achat
     attributes:
-      label: Arrangements attendus par la personne plaignante
-    validations:
-      required: true
+      label: Matériel à acheter
 
-  - type: textarea
-    id: temoins
+  - type: checkbox
+    id: taches
     attributes:
-      label: Identification des témoins
-    validations:
-      required: true
+      label: Tâches à réaliser
+      multiple: true
+      options:
+        - Demande de réservation du lieu
+        - Produire et envoyer le formulaire d'inscription
+        - 
