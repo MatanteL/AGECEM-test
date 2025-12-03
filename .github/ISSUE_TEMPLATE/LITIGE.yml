@@ -1,14 +1,12 @@
 name: Litige
 description: Pour réception des situations de litige.
-title: 
-labels: 
 projects: ["Tâches"]
-assignees:
 type: litige
 body:
   - type: markdown
     attributes:
-      value: ## RÉCEPTION DU LITIGE
+      value: | 
+      ## RÉCEPTION DU LITIGE
 
   - type: input
     id: numero
