@@ -4,7 +4,7 @@ projects: ["Tâches"]
 title: "[DATE]: "
 type: litige
 body:
-  - type: input
+ type: input
     id: numero
     attributes:
       label: Numéro de dossier
@@ -13,7 +13,7 @@ body:
     validations:
       required: true
 
-  - type: input
+ type: input
     id: date
     attributes:
       label: Date de réception du litige
@@ -21,7 +21,7 @@ body:
     validations:
       required: true
       
-  - type: input
+ type: input
     id: plaignant-e
     attributes:
       label: Nom et code étudiant de la personne plaignante
@@ -29,7 +29,7 @@ body:
     validations:
       required: true
 
-  - type: input
+ type: input
     id: mis-en-cause
     attributes:
       label: Nom de la personne mise en cause
@@ -37,7 +37,7 @@ body:
     validations:
       required: true
 
-   - type: dropdown
+   type: dropdown
     id: poste
     attributes:
       label: Poste de la personne mise en cause
@@ -51,28 +51,28 @@ body:
         - Organisme étudiant
         - Instance de l'AGECEM
       
-  - type: textarea
+ type: textarea
     id: evenements
     attributes:
       label: Description des événements
     validations:
       required: true
 
-  - type: textarea
+  type: textarea
     id: consequences
     attributes:
       label: Conséquences ou impacts sur la personne plaignante
     validations:
       required: true
 
-  - type: textarea
+ type: textarea
     id: arrangements
     attributes:
       label: Arrangements attendus par la personne plaignante
     validations:
       required: true
 
-  - type: textarea
+  type: textarea
     id: témoins
     attributes:
       label: Identification des témoins
