@@ -50,7 +50,7 @@ body:
         - Organisme étudiant
         - Instance de l'AGECEM
 
-   - type: dropdown
+  - type: dropdown
     id: departement
     attributes:
       label: Département scolaire
